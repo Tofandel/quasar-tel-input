@@ -1,0 +1,93 @@
+{
+  "name": "@tofandel/q-tel-input",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Vue 3 telephone input for the Quasar framework",
+  "scripts": {
+    "serve": "vite",
+    "test": "exit 0",
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.cjs,.mjs,.ts",
+    "lint:fix": "eslint --fix . --ext .vue,.cjs,.mjs,.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tofandel/q-tel-input.git"
+  },
+  "homepage": "https://github.com/Tofandel/q-tel-input/blob/master/readme.md",
+  "keywords": [
+    "vue3",
+    "vue-3",
+    "vue 3",
+    "vue3-tel-input",
+    "phone input",
+    "telephone input",
+    "international phone",
+    "quasar",
+    "quasar v2",
+    "quasar framework",
+    "country",
+    "input",
+    "country input",
+    "telephone",
+    "tel input",
+    "telephone input",
+    "international number",
+    "international",
+    "phone number",
+    "phone",
+    "q-tel",
+    "q-tel-input",
+    "q tel",
+    "q tel input",
+    "quasar telephone",
+    "quasar telephone input",
+    "quasar phone number",
+    "quasar phone",
+    "quasar phone number input",
+    "vue phone number",
+    "vue phone input",
+    "vue phone international"
+  ],
+  "main": "dist/q-tel-input.ssr.js",
+  "module": "dist/q-tel-input.esm.js",
+  "browser": "dist/q-tel-input.esm.js",
+  "unpkg": "dist/q-tel-input.min.js",
+  "files": [
+    "dist/*",
+    "q-tel-input.d.ts"
+  ],
+  "dependencies": {
+    "libphonenumber-js": "^1.10.61"
+  },
+  "devDependencies": {
+    "vite": "^5.2.10",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint-plugin-vue": "^9.7.0",
+    "quasar": "^2.15.4",
+    "sass": "^1.75.0",
+    "sass-loader": "^14.2.1",
+    "typescript": "^5.4.5",
+    "vue": "^3.4.25",
+    "vite-plugin-dts": "^3.9.0",
+    "vue-tsc": "^2.0.14",
+    "@quasar/extras": "^1.16.11"
+  },
+  "peerDependencies": {
+    "quasar": "^2.0.0",
+    "vue": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "types": "q-tel-input.d.ts"
+}

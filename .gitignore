@@ -1,0 +1,7 @@
+dist
+.vscode
+node_modules
+package-json.lock
+*.tgz
+yarn-error.log
+.yarn
