@@ -1,6 +1,6 @@
 {
   "name": "@tofandel/q-tel-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -85,5 +85,5 @@
   },
   "sideEffects": false,
   "license": "MIT",
-  "types": "q-tel-input.d.ts"
+  "types": "dist/main.d.ts"
 }
