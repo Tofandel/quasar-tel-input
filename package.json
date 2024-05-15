@@ -1,6 +1,6 @@
 {
   "name": "@tofandel/q-tel-input",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -53,13 +53,9 @@
     "vue phone input",
     "vue phone international"
   ],
-  "main": "dist/q-tel-input.ssr.js",
-  "module": "dist/q-tel-input.esm.js",
-  "browser": "dist/q-tel-input.esm.js",
-  "unpkg": "dist/q-tel-input.min.js",
+  "main": "dist/q-tel-input.js",
   "files": [
-    "dist/*",
-    "q-tel-input.d.ts"
+    "dist/*"
   ],
   "dependencies": {
     "libphonenumber-js": "^1.10.61"

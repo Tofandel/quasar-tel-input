@@ -206,25 +206,3 @@ watch(isValidPhone, () => {
   emit('update:valid', isValidPhone.value);
 }, {immediate: true});
 </script>
-
-<style lang="scss">
-.q-tel-input {
-  &.no-inherit-feedback, .no-inherit-feedback {
-    &.q-field--highlighted {
-      .q-field__inner {
-        .q-field__inner {
-          .q-field__control {
-            &::after { display: none; }
-          }
-        }
-      }
-    }
-  }
-
-  &.no-feedback, .no-feedback {
-    .q-field__control {
-      &::after { display: none; }
-    }
-  }
-}
-</style>

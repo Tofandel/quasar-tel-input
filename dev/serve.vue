@@ -11,8 +11,6 @@
           :allowed-countries="['FR', 'ES', 'HU']"
           search-text="Search using code/country"
           dense
-          filled
-          outlined
           no-results-text="Sample here"
         />
       </div>

@@ -7,20 +7,20 @@
     hide-dropdown-icon
     borderless
     virtual-scroll-slice-size="9999"
-    class="no-inherit-feedback no-feedback v3-q-tel-input--country"
+    class="q-tel-input--country"
     :menu-offset="[12, 0]"
     @popup-hide="searchText = ''"
     @update:model-value="emit('update:country', $event)"
   >
     <template #option="scope">
       <QItem
-        class="flex items-center q-pa-xs mdi-border-bottom no-wrap"
+        class="flex items-center q-pa-xs mdi-border-bottom no-wrap q-tel-input-flags"
         v-bind="scope.itemProps"
         dense
       >
         <span
           v-if="!!scope.opt.iso2"
-          :class="!useEmoji ? ['v3q_tel__flag', 'flag', 'flag-'+scope.opt.iso2.toLowerCase()] : 'q-mr-sm'"
+          :class="!useEmoji ? ['v3q_tel__flag', 'flag', 'flag-'+scope.opt.iso2.toLowerCase()] : 'q-ml-sm'"
         >{{ useEmoji ? getEmojiFromCountryCode(scope.opt.iso2) : '' }}</span>
         <span
           v-if="!!scope.opt.dialCode"
@@ -33,7 +33,7 @@
     <template #selected-item="scope">
       <div
         v-if="scope.opt"
-        class="q-pa-none ellipsis"
+        class="q-pa-none ellipsis q-tel-input-flags"
         style="min-height: unset"
       >
         <div class="flex items-center no-wrap">
@@ -111,11 +111,13 @@ const emit = defineEmits(['update:country']);
 </script>
 
 <style lang="scss">
-.v3-q-tel-input--country {
+.q-tel-input-flags {
   @import '../styles/flags';
+}
+.q-tel-input--country {
   .q-field__control {
     background: none;
-    &::before {
+    &::before, &::after {
       display: none;
     }
   }

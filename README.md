@@ -1,6 +1,6 @@
 ### Vue3 Quasar Telephone Input
 
-## ![Node version](https://img.shields.io/node/v/@tofandel/q-tel-input.svg?style=flat) ![Types](https://badgen.net/badge/types/included/green) [![](https://data.jsdelivr.com/v1/package/npm/@tofandel/q-tel-input/badge)](https://www.jsdelivr.com/package/npm/@tofandel/q-tel-input) [![](https://badgen.net/badge/github/q-tel-input/blue?icon=github)](https://github.com/tofandel/q-tel-input) [![](https://badgen.net/badge/npm/%40tofandel%2Fq-tel-input/blue?icon=npm)](https://www.npmjs.com/package/@tofandel/q-tel-input)
+## ![Node version](https://img.shields.io/node/v/@tofandel/q-tel-input.svg?style=flat) ![Types](https://badgen.net/badge/types/included/green) [![](https://data.jsdelivr.com/v1/package/npm/@tofandel/q-tel-input/badge)](https://www.jsdelivr.com/package/npm/@tofandel/q-tel-input) [![](https://badgen.net/badge/github/q-tel-input/blue?icon=github)](https://github.com/Tofandel/q-tel-input) [![](https://badgen.net/badge/npm/%40tofandel%2Fq-tel-input/blue?icon=npm)](https://www.npmjs.com/package/@tofandel/q-tel-input)
 
 ##### @tofandel/q-tel-input
 
