@@ -43,7 +43,7 @@
       </div>
     </template>
     <template #after-options>
-      <div class="v3-q-tel--country-selector last-search-item q-pa-sm">
+      <div class="q-tel-input--country-search q-pa-sm">
         <QInput
           ref="input"
           v-model="searchText"
@@ -124,12 +124,11 @@ const emit = defineEmits(['update:country']);
   .q-field__input {
     border: none;
   }
-
-  .v3-q-tel--country-selector {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+}
+.q-tel-input--country-search {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 </style>
