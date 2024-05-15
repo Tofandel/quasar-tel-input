@@ -7,7 +7,6 @@
           v-model:country="country"
           v-model:dial-code="countryCode"
           v-model:valid="valid"
-          use-emoji
           :allowed-countries="['FR', 'ES', 'HU']"
           search-text="Search using code/country"
           dense

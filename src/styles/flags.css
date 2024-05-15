@@ -1,6 +1,7 @@
 span.flag {
-    width: 44px;
-    height: 30px;
+    width: 22px;
+    height: 15px;
+    aspect-ratio: 22 / 15;
     display: inline-block
 }
 
