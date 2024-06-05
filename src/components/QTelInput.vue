@@ -3,6 +3,7 @@
     v-model="internalNumber"
     :rules="[() => invalidMessage === false || isValidPhone ? true : props.invalidMessage, ...rules]"
     class="q-tel-input"
+    type="tel"
     :dense="dense"
     :readonly="readonly"
     :disable="disable"
