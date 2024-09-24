@@ -103,7 +103,7 @@ const onBlur = () => {
 
   if (phoneNumber.value) {
     // Remove country code on blur
-    internalNumber.value = getNumber(phoneNumber.value, true).replace('+'+phoneNumber.value.countryCallingCode, '').trim();
+    internalNumber.value = getNumber(phoneNumber.value);
   }
 };
 
@@ -144,7 +144,7 @@ const getNumber = (instance: PhoneNumber, international = false): string => {
   if (!instance) {
     return '';
   }
-  return international ? instance.formatInternational() : instance.formatNational();
+  return international ? instance.formatInternational() : instance.formatInternational().replace('+'+instance.countryCallingCode, '').trim();
 };
 
 const isValidPhone = computed(() => phoneNumber.value && phoneNumber.value!.isValid() && (!props.allowedCountries || props.allowedCountries.includes(phoneNumber.value!.country!)));
@@ -153,7 +153,7 @@ let checkNextCaret = false;
 const caretPos = ref<number | null>(null);
 
 const updateCaret = (event: Event) => {
-  if (event.target instanceof HTMLInputElement && event.target.type === 'text' && event.target.classList.contains('q-field__native')) {
+  if (event.target instanceof HTMLInputElement && event.target.type === 'tel' && event.target.classList.contains('q-field__native')) {
     caretPos.value = event.target.selectionStart;
   }
 };
@@ -202,7 +202,7 @@ watch(() => props.dialCode, () => {
 
 watch(isValidPhone, () => {
   if (isValidPhone.value && phoneNumber.value && caretPos.value! >= internalNumber.value.length - 1) {
-    internalNumber.value = getNumber(phoneNumber.value, true).replace('+'+phoneNumber.value.countryCallingCode, '').trim();
+    internalNumber.value = getNumber(phoneNumber.value);
   }
   emit('update:valid', isValidPhone.value);
 }, {immediate: true});
